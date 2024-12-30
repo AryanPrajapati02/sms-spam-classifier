@@ -45,9 +45,9 @@ if st.button('Predict'):
     vectorized_text = tfidf.transform([transformed_text])
     prediction = model.predict(vectorized_text)[0]
     if prediction == 1:
-        st.write('This is a spam sms')
+        st.header('This is a spam sms')
     else:
-        st.write('This is a ham sms')
+        st.header('This is a ham sms')
         
 
 
